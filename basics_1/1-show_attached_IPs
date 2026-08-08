@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
-# This script displays all active IPv4 IPs on the machine.
-ip -o addr show | awk '{print $4}' | cut -d'/' -f1
+# This script displays all active IPv4 IPs on the machine, one per line.
+hostname -I | xargs -n 1
