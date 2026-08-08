@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
-# Display listening TCP and UDP sockets with their owning programs.
-netstat -lp
+# Display listening TCP, UDP, and UNIX sockets with their owning programs.
+sudo netstat -nutlp
